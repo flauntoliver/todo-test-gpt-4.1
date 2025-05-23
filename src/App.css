@@ -1,0 +1,137 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app-container {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem 1.5rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  color: #222;
+}
+
+.app-container h1,
+.app-container label,
+.app-container input,
+.app-container .empty-list,
+.app-container .todo-item span {
+  color: #222;
+}
+
+.add-todo-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.add-todo-form input[type="text"] {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.add-todo-form button {
+  padding: 0.5rem 1rem;
+  background: #646cff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.add-todo-form button:hover {
+  background: #535bf2;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+.todo-item:last-child {
+  border-bottom: none;
+}
+.todo-item label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+  cursor: pointer;
+}
+.todo-item input[type="checkbox"] {
+  accent-color: #646cff;
+  width: 1.1em;
+  height: 1.1em;
+}
+.todo-item .completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+.delete-btn {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 0 0.5em;
+  transition: color 0.2s;
+}
+.delete-btn:hover {
+  color: #c0392b;
+}
+
+.empty-list {
+  color: #888;
+  text-align: center;
+  margin-top: 1.5rem;
+}
